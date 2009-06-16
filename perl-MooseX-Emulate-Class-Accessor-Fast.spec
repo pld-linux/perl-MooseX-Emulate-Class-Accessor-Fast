@@ -64,6 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%{perl_vendorlib}/MooseX/Adopt/Class/Accessor/Fast.pm
 %{perl_vendorlib}/MooseX/Emulate/Class/Accessor/*.pm
 %{perl_vendorlib}/MooseX/Emulate/Class/Accessor/Fast
 %{_mandir}/man3/*
