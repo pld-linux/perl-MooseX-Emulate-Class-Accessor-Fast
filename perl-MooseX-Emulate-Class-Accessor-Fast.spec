@@ -8,19 +8,19 @@
 Summary:	MooseX::Emulate::Class::Accessor::Fast - Emulate Class::Accessor::Fast behavior using Moose attributes
 Summary(pl.UTF-8):	MooseX::Emulate::Class::Accessor::Fast - Emuluje zachowanie Class::Accessor::Fast przy użyciu atrybutów Moose
 Name:		perl-MooseX-Emulate-Class-Accessor-Fast
-Version:	0.00900
+Version:	0.00902
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/MooseX/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	36ed235d4d2d9759c24a99358eb471e6
+# Source0-md5:	4fa57ee9110fe6e868b8625a9e47b50c
 URL:		http://search.cpan.org/dist/MooseX-Emulate-Class-Accessor-Fast/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.42
-BuildRequires:	perl-Moose >= 0.74
+BuildRequires:	perl-Moose >= 0.84
 BuildRequires:	perl-Test-Exception
 BuildRequires:	perl-namespace-clean
 %endif
