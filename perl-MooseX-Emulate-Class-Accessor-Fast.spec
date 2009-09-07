@@ -9,7 +9,7 @@ Summary:	MooseX::Emulate::Class::Accessor::Fast - Emulate Class::Accessor::Fast 
 Summary(pl.UTF-8):	MooseX::Emulate::Class::Accessor::Fast - Emuluje zachowanie Class::Accessor::Fast przy użyciu atrybutów Moose
 Name:		perl-MooseX-Emulate-Class-Accessor-Fast
 Version:	0.00902
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -64,7 +64,13 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorlib}/MooseX/Adopt
+%dir %{perl_vendorlib}/MooseX/Adopt/Class
+%dir %{perl_vendorlib}/MooseX/Adopt/Class/Accessor
 %{perl_vendorlib}/MooseX/Adopt/Class/Accessor/Fast.pm
+%dir %{perl_vendorlib}/MooseX/Emulate
+%dir %{perl_vendorlib}/MooseX/Emulate/Class
+%dir %{perl_vendorlib}/MooseX/Emulate/Class/Accessor
 %{perl_vendorlib}/MooseX/Emulate/Class/Accessor/*.pm
 %{perl_vendorlib}/MooseX/Emulate/Class/Accessor/Fast
 %{_mandir}/man3/*
